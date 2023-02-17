@@ -1,4 +1,4 @@
-FROM python
+FROM python:latest
 
 RUN apt-get update && apt-get install dos2unix
 RUN groupadd -r uwsgi && useradd -r -g uwsgi uwsgi
